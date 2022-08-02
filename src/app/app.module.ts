@@ -10,6 +10,7 @@ import { GalleryViewComponent } from './views/gallery-view/gallery-view.componen
 import { AboutViewComponent } from './views/about-view/about-view.component';
 import { FooterWidgetComponent } from './widgets/footer-widget/footer-widget.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
