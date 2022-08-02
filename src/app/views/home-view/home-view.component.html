@@ -15,16 +15,31 @@
             <div class="row">
 
                 <div class="col">
-                    <button class="btn btn-primary w-100 hvr-bob" type="button">Mi trabajo</button>
+                    <!--BTN GALLERY-->
+                    <button (click)="scrollToGallery()" class="btn btn-primary w-100 hvr-bob" type="button">Mi trabajo</button>
                 </div>
                 <div class="col">
-                    <button class="btn btn-light w-100 hvr-bob" type="button">Sobre mí</button>
+                    <!--BTN ABOUT-->
+                    <button (click)="navigate('/about')" class="btn btn-light w-100 hvr-bob" type="button">Sobre mí</button>
                 </div>
 
                 <div class="col d-none d-lg-block">
                     
                 </div>
                
+            </div>
+            <!--SOCIAL LINKS-->
+            <div class="row py-3">
+                <div class="col">
+                    <!--BTN SOCIAL LINK-->
+                    <a  href="{{socialUrl.url}}" target="_blank" class="btn " type="button" *ngFor="let socialUrl of socialUrlsServiceService.socialUrls">
+                        <i class="bi {{socialUrl.icon}} "></i>
+                    </a>
+                    <span class="mx-2 text-muted small">
+                        <i class="bi bi-geo-alt-fill"></i> Ciudad de México
+
+                    </span>
+                </div>
             </div>
             
         </div>

@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-auto d-flex align-items-center">
                 
-            <span class="fw-bold" type="button">
+            <span class="fw-bold" type="button" (click)="navigate('/home')">
              <img src="../../../assets/brand/vapographic_logo.svg" class="logoIcon px-2">    Vapor Graphic
             </span>
         </div>
@@ -13,17 +13,17 @@
 
             <!--FULL NAVBAR-->
             <section class="d-md-block d-none">
-                <button class="btn " type="button">
+                <button class="btn " type="button" (click)="navigate('/home')">
                     Galeria
                 </button>
             </section>
 
             <!--STATIC WEB-->
-            <button class="btn " type="button">
+            <button class="btn " type="button" (click)="navigate('/about')">
                 Contacto
             </button>
 
-            <!--COLAPSED NAVBAR-->
+            <!--COLAPSED NAVBAR
             <section class="d-md-none d-block">
                 
 
@@ -31,6 +31,7 @@
                     <i class="bi bi-list lead"></i>
                 </button>
             </section>
+            -->
         </div>
     </div>
 </div>

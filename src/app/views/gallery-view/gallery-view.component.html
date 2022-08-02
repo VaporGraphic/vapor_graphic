@@ -1,17 +1,20 @@
-<div class="container text-lg-start text-center py-3">
-    <h1 class="h1 ">
+<div class="container text-lg-start text-center py-3" id="gallery">
+    <h1 class="h1 " >
         Galeria de proyectos
     </h1>
     <span class="text-muted small">
         Diseñando experiencias para tus sentidos
     </span>
 </div>
-<div class="container">
+<div class="container mb-5">
+    
+
     <div class="row">
-        <div class="col-auto">
-            <div class="bg-danger  hvr-grow">
-                asd
+            <div class="col-6 col-xl-2 col-lg-3 col-md-4 col-sm-6 p-2 hvr-grow animate__animated animate__fadeIn  animate__slow rounded" *ngFor="let item of listExamples; ; let i = index">
+                <img class="image-card-container  " src="../../../assets/examples/{{item}}.webp" alt="">
+
             </div>
-        </div>
-    </div> 
+    </div>
+
+
 </div>
